@@ -3,7 +3,7 @@ title: "Codeburger's Blog"
 header-img: img/home-bg.jpg
 email: mainliufeng@gmail.com
 description: "LiuFeng's Blog"
-# baseurl: "/startbootstrap-clean-blog-jekyll"
+baseurl: "/Blog"
 # url: "http://yourdomain.com"
 twitter_username: mainliufeng 
 github_username: "Liu-Feng" 
