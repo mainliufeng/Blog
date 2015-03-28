@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Codeburger&#39;s Blog</title>
+    <description>LiuFeng&#39;s Blog</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Sun, 29 Mar 2015 00:29:15 +0800</pubDate>
+    <lastBuildDate>Sun, 29 Mar 2015 00:29:15 +0800</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>使用Github Pages和Jekyll创建个人博客</title>
+        <description>&lt;p&gt;Github Pages 依靠 Github 上项目的某些特定分支来工作。Github Pages 分为两种基本类型：用户/组织的站点和项目的站点。搭建这两种类型站 点的方法除了一小些细节之外基本一致。&lt;/p&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;用户和组织的站点&lt;/h2&gt;
+
+&lt;p&gt;用户和组织的站点被放置在一个特殊的专用仓库中，在该仓库中只存在 Github Pages 的相关文件。这个仓库应该根据用户/组织的名称来命名， 例如： &lt;a href=&quot;https://github.com/mojombo/mojombo.github.io&quot;&gt;@mojombo 的用户站点仓库&lt;/a&gt;的用户站点仓库 应该被命名为&lt;code&gt;mojombo.github.io&lt;/code&gt; 。&lt;/p&gt;
+
+&lt;p&gt;仓库中&lt;code&gt;master&lt;/code&gt;分支里的文件将会被用来生成 Github Pages 站点，所以请 确保你的文件储存在该分支上。&lt;/p&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;项目的站点&lt;/h2&gt;
+
+&lt;p&gt;不同于用户和组织的站点，项目的站点文件存放在项目本身仓库的&lt;code&gt;gh-pages&lt;/code&gt;分支中。该分支下的文件将会被 Jekyll 处理，生成的站点会被 部署到你的用户站点的子目录上，例如&lt;code&gt;username.github.io/project&lt;/code&gt;（除非指定了一个自定义的域名）。&lt;/p&gt;
+
+&lt;p&gt;Jekyll 项目本身就是一个很好的例子，Jekyll 项目的代码存放在&lt;code&gt;master&lt;/code&gt;分支 ， 而 Jekyll 的项目站点（就是你现在看见的网页）包含在同一仓库的&lt;code&gt;gh-pages&lt;/code&gt;分支中。&lt;/p&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;安装Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Github上的&lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll&quot;&gt;&lt;code&gt;Jekyll帮助&lt;/code&gt;&lt;/a&gt;，对Jekyll的安装描述的很详细&lt;/p&gt;
+
+&lt;h2 class=&quot;section-heading&quot;&gt;创建站点&lt;/h2&gt;
+
+&lt;p&gt;自己创建站点可以参考&lt;a href=&quot;http://jekyllcn.com/docs/pages/&quot;&gt;&lt;code&gt;Jekyll文档&lt;/code&gt;&lt;/a&gt;和&lt;a href=&quot;https://help.github.com/articles/using-jekyll-with-pages/#configuring-jekyll&quot;&gt;&lt;code&gt;Github帮助&lt;/code&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;也可以到&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;&lt;code&gt;Jekyll Theme&lt;/code&gt;&lt;/a&gt;下载主题使用&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;
+    &lt;img src=&quot;/img/jekyll-theme.png&quot; alt=&quot;Jekyll Theme&quot; /&gt;
+&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 29 Mar 2015 06:46:00 +0800</pubDate>
+        <link>/2015/03/29/create-blog/</link>
+        <guid isPermaLink="true">/2015/03/29/create-blog/</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
