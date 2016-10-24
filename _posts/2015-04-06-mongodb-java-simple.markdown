@@ -18,6 +18,3 @@ header-img: "img/post-bg-01.jpg"
 
 <p>在Mac上使用Docker需要安装boot2docker、VirtualBox（boot2docker依赖）和docker，也就是说到官网下载VirtualBox安装，然后用brew安装bootdocker和docker。</p>
 
-<h2 class="section-heading">框架</h2>
-
-<p>待续</p>
