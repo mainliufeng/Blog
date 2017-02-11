@@ -2,7 +2,7 @@
 layout:     post
 title:      "Quick way using MongoDB for your Java program"
 date:       2015-04-06 19:07:00
-author:     "codeburger"
+author:     "mainliufeng"
 header-img: "img/post-bg-01.jpg"
 ---
 

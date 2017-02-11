@@ -2,7 +2,7 @@
 layout:     post
 title:      "使用Github Pages和Jekyll创建个人博客"
 date:       2015-03-28 22:46:00
-author:     "codeburger"
+author:     "mainliufeng"
 header-img: "img/post-bg-01.jpg"
 ---
 
