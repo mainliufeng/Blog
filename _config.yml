@@ -1,12 +1,12 @@
 # Site settings
-title: "Mainliufeng's Blog" 
+title: "刘峰的博客" 
 header-img: img/home-bg.jpg
 email: mainliufeng@gmail.com
-description: "Mainliufeng's Blog"
+description: "刘峰的博客"
 # baseurl: "/Blog"
 # url: "http://yourdomain.com"
 twitter_username: mainliufeng 
-github_username: "Liu-Feng" 
+github_username: "mainliufeng" 
 facebook_username: mainliufeng 
 
 # Build settings
