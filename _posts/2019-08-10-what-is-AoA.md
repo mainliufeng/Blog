@@ -36,7 +36,7 @@ $$M(i,j) = h_{doc}(i)^{T} \cdot h_{query}(j)$$
 
 对于Query中每一个时刻*t*的词，将这一列的score取softmax，也就是这个Query中当前这个词，对Document中每一个词关注的概率：
 
-$$\alpha(t) = softmax(M(1,t),...,M(\|D\|,t))$$
+$$\alpha(t) = softmax(M(1,t),...,M(|D|,t))$$
 
 $$\alpha = [\alpha(1),\alpha(2),...,\alpha(|Q|)]$$
 
@@ -44,7 +44,7 @@ $$\alpha = [\alpha(1),\alpha(2),...,\alpha(|Q|)]$$
 
 对称的，对于Document中每一个时刻*t*的词，将这一行的score取softmax，也就是这个Document中当前词，对Query中每一个词关注的概率：
 
-$$\beta(t) = softmax(M(t,1),...,M(t,\|Q\|))$$
+$$\beta(t) = softmax(M(t,1),...,M(t,|Q|))$$
 
 $$\beta = [\beta(1),\beta(2),...,\beta(|D|)]$$
 
