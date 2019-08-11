@@ -66,12 +66,28 @@ $$softmax(QK^{T})$$
 
 上面图中右边的红框，是模型分成两个Attention之后的处理，直接把*document-to-query* attention在列上取了平均值，每一列是一个Document，相当于是对Document中每一个单词，对Query的attention取了平均数，也就是整个文档对Query中每一个词的Attention；大小是Q。
 
+$$\beta = \frac{1}{n}\sum_{t=1}^{|D|}\beta(t)$$
+
+$$s = \alpha^T\beta$$
+
 然后用，*query-to-document* attention和上面的*整个文档对Query的Attention*相乘，得到最终的*“attended  document-level  attention”*，这个相当于Query中每一个词，对Document的*query-to-document* attention，不是直接取平均数，而是根据整个文档对Query中每个词的Attention来计算一个加权平均数。
 
 ### AoA有没有用
 
-Bert上加AoA有没有提升：[有一篇论文](http://web.stanford.edu/class/cs224n/reports/default/15845024.pdf)中写到*However, we found that adding AoA did not improve the performance ofBERT. We thought this is because the BERT Transformer already uses bidirectional self-attention, sono additional attention is needed for BERT.*；
+[Ensemble BERT with Data Augmentation andLinguistic Knowledge on SQuAD 2.0](http://web.stanford.edu/class/cs224n/reports/default/15845024.pdf)这篇论文试图在Bert的最后一个隐藏层中加上AoA，可到的结果是：
 
-Bert加AoA为什么没有提升：这个上面已经说出来了，Bert没有AoA但是Bert的输入是两个句子的拼接做self attention，相当于query to document和document to query已经都有了，原来以为是简单粗暴，现在看还是比较巧妙的。
+<a href="#">
+    <img src="{{ site.baseurl }}/img/AoA-result.png" alt="AoA-result">
+</a>
 
-但是哈工大和讯飞确实用AoA刷了几次SQuAD2.0，这个也没有找到代码，或许姿势不一样？或许有一些不是很大的提升？这个“BERT + DAE + AoA”的模型已经用了很多次了，或许只是没有做去掉AoA的尝试，在其他地方做了改进。
+<a href="#">
+    <img src="{{ site.baseurl }}/img/bert-result.png" alt="bert-result">
+</a>
+
+可以看到，能够形成比较的有两组结果，都是加上AoA后f1和em反而降低，说明了这两组超参数上，Bert加AoA是没有用的。
+
+论文中写到：*"However, we found that adding AoA did not improve the performance ofBERT. We thought this is because the BERT Transformer already uses bidirectional self-attention, sono additional attention is needed for BERT."*；他们尝试了几次AoA没有提升后就放弃了，至于AoA到底有没有用，最好在更多的超参数上再做一下实验。
+
+Bert加AoA为什么没有提升：上面论文的观点是，Bert没有AoA但是Bert的输入是两个句子的拼接做self attention，相当于query to document和document to query已经都有了。
+
+原来以为Bert是简单粗暴，现在看还是比较巧妙的。
