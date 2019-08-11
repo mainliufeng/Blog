@@ -3,10 +3,10 @@ layout:     post
 title:      "Bert加AoA有用吗"
 date:       2019-08-10 13:59:00
 author:     "mainliufeng"
+mathjax:    true
 header-img: "img/AoA-head.png"
 ---
 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 ### Bert
 
